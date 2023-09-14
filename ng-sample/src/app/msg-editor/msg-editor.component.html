@@ -1,1 +1,26 @@
 <p>msg-editor works!</p>
+
+<div #container></div>
+
+<div>
+  <button (click)="setSelect()">Select</button>
+  <button (click)="setLine()">Line</button>
+  <button (click)="setCircle()">Circle</button>
+  <button (click)="setRect()">Rect</button>
+  <button (click)="setText()">Text</button>
+  <button (click)="fillRed()">Fill Red</button>
+  <button (click)="deleteSelectedElements()">Delete Selected</button>
+  <button (click)="clearAll()">Clear All</button>
+  <button (click)="getSVG()">Get SVG</button>
+
+
+  <button (click)="createLayer()">Create Layer</button>
+</div>
+
+<div>
+
+
+<input class="hidden-text-input" #text id="text" (input)="textChanged()" />
+<!--
+<div>Current-Mode: {{canvas?.currentMode}}</div>
+<div>Current-Layer: {{canvas?.current_drawing_.current_layer.name_}}</div> -->

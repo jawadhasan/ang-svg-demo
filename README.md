@@ -13,14 +13,14 @@ A simple guide.
 ### create app
 
 ```
-ng new my-new-app
+ng new demo-app
 ```
 ```
 ng serve --open
 ```
 
 ```
-npm install primeng@13.0.0  
+npm install primeng
 npm install primeicons
 ```
 
