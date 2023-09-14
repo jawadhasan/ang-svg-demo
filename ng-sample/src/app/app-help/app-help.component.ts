@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MessageService} from 'primeng/api';
 
 @Component({
   selector: 'app-app-help',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppHelpComponent implements OnInit {
 
-  constructor() { }
+  constructor(private messageService: MessageService) { }
+value1:string="";
+value2:string="";
 
   ngOnInit(): void {
+  }
+
+  helpClicked(){
+    console.log("help clicked");
+    this.messageService.add({severity:'success', summary:'Service Message', detail:'Via MessageService'});
   }
 
 }

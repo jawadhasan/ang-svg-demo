@@ -19,6 +19,11 @@ ng new my-new-app
 ng serve --open
 ```
 
+```
+npm install primeng@13.0.0  
+npm install primeicons
+```
+
 ### Installing
 
 Install dependencies

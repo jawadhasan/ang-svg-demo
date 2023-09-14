@@ -1,1 +1,32 @@
-<p>app-help works!</p>
+
+<p-card>
+  <ng-template pTemplate="header">
+    app-help works!
+  </ng-template>
+
+
+  <form>
+    <span class="p-float-label">
+
+      <input id="username-input" type="text" pInputText>
+      <label for="username-input">Username</label>
+  </span>
+
+
+
+
+
+
+  </form>
+
+  <ng-template pTemplate="footer">
+    <button pButton type="button" class="p-button-help" pTooltip="inspect console" (click)="helpClicked()">Send</button>
+  </ng-template>
+</p-card>
+
+
+
+
+
+
+<p-toast></p-toast>
