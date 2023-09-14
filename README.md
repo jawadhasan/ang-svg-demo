@@ -15,7 +15,9 @@ A simple guide.
 ```
 ng new my-new-app
 ```
-
+```
+ng serve --open
+```
 
 ### Installing
 
