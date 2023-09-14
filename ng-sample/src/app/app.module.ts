@@ -16,9 +16,11 @@ import {TooltipModule} from 'primeng/tooltip';
 import {CardModule} from 'primeng/card';
 import {InputTextModule} from 'primeng/inputtext';
 
+
 import {ToastModule} from 'primeng/toast';
 
 import {MessageService} from 'primeng/api';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import {MessageService} from 'primeng/api';
     AppHelpComponent,
     MsgEditorComponent,
     DeviceSettingsComponent,
-    DevConsoleComponent
+    DevConsoleComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +40,7 @@ import {MessageService} from 'primeng/api';
     ButtonModule,
     CardModule,
     InputTextModule,
+
 
     TooltipModule,
     ToastModule

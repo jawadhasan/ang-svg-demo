@@ -24,6 +24,9 @@ npm install primeng@13.0.0
 npm install primeicons
 ```
 
+```
+ng g c help
+```
 ### Installing
 
 Install dependencies
