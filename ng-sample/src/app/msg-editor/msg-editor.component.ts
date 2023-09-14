@@ -53,7 +53,9 @@ export class MsgEditorComponent implements OnInit {
   //intialization
 
   private initSvgCanvas(): void {
-    const dimensions: any = { width: 500, height: 300 };
+
+    const dimensions: any = { width: 600, height: 300 };
+
     const config = {
       initFill: { color: 'FFFFFF', opacity: 1 },
       initStroke: { color: '000000', opacity: 1, width: 1 },
@@ -67,7 +69,6 @@ export class MsgEditorComponent implements OnInit {
     };
 
     this.canvas = new SvgCanvas(this.containerEl.nativeElement, config);
-
     this.canvas.updateCanvas(dimensions.width, dimensions.height);
     // Make background transparent
     // const bg = this.canvas.getElement('canvasBackground');

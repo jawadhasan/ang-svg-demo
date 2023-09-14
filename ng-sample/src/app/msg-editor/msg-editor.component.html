@@ -1,9 +1,9 @@
-<p>msg-editor works!</p>
+<p>Editor</p>
 
 <div #container></div>
 
 <div>
-  <button (click)="setSelect()">Select</button>
+  <!-- <button >Select</button>
   <button (click)="setLine()">Line</button>
   <button (click)="setCircle()">Circle</button>
   <button (click)="setRect()">Rect</button>
@@ -12,9 +12,18 @@
   <button (click)="deleteSelectedElements()">Delete Selected</button>
   <button (click)="clearAll()">Clear All</button>
   <button (click)="getSVG()">Get SVG</button>
+  <button (click)="createLayer()">Create Layer</button> -->
+</div>
 
-
-  <button (click)="createLayer()">Create Layer</button>
+<div>
+  <button pButton pRipple type="button" icon="pi pi-cursor" class="p-button-rounded" (click)="setSelect()">Select</button>
+  <button pButton pRipple type="button" icon="pi pi-minus" class="p-button-rounded p-button-secondary" (click)="setLine()">Line</button>
+  <button pButton pRipple type="button" icon="pi pi-circle" class="p-button-rounded p-button-success" (click)="setCircle()">Circle</button>
+  <button pButton pRipple type="button" icon="pi pi-square" class="p-button-rounded p-button-info" (click)="setRect()">Rect</button>
+  <button pButton pRipple type="button" icon="pi pi-book" class="p-button-rounded p-button-warning" (click)="setText()">Text</button>
+  <button pButton pRipple type="button" icon="pi pi-box" class="p-button-rounded p-button-warning" (click)="fillRed()">Fill</button>
+  <button pButton pRipple type="button" icon="pi pi-trash" class="p-button-rounded p-button-trash" (click)="deleteSelectedElements()">Delete</button>
+  <!-- <button pButton pRipple type="button" icon="pi pi-times" class="p-button-rounded p-button-danger" (click)="clearAll()">Clear</button> -->
 </div>
 
 <div>

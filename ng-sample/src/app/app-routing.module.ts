@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'settings', component: DeviceSettingsComponent },
   { path: 'help', component: AppHelpComponent },
   { path: 'devcon', component: DevConsoleComponent },
+  { path: 'home', component: HomeComponent },
   { path: '', component: HomeComponent },
 ];
 
